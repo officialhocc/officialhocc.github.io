@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "HackTheBox - October"
-date:   2017-07-25 19:00:00 +0100
-categories: [hackthebox]
+title: HackTheBox - October
+date: 2018-07-03 23:00:00 +0000
+categories:
+- hackthebox
 description: Solutions for HackTheBox October
 image:
   feature: october.jpg
-  credit:
-  creditlink:
+  credit: 
+  creditlink: 
 ---
 **Edit**: A few months on and i have found my understanding and explanation of some of the concepts here lacking to say the least.  As a result, I have decided to improve the explanations offered here.
 
