@@ -17,7 +17,7 @@ menu:
   url: contact.html
 - name: Resume
   url: Resume.pdf
-  path: assets/img/
+  path: assets/img
 social:
 - icon: github
   link: https://github.com/officialhocc
