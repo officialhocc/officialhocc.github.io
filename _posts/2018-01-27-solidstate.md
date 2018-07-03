@@ -6,7 +6,7 @@ categories:
 - hackthebox
 description: ''
 image:
-  feature: assets/img/Alchemical-Seal-Wallpaper-by-saintabyssal.png
+  feature: https://officialhocc.github.io/assets/img/assets/img/solid_by_matt023-d79n43r.png
   credit: 
   creditlink: 
 ---
