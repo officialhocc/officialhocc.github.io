@@ -5,7 +5,7 @@ layout: post
 categories:
 - hackthebox
 image:
-  feature: ''
+  feature: assets/img/f9db43adddcd1dfdefa4dcf8abe11d65.jpg
   credit: ''
   creditlink: ''
 description: ''
