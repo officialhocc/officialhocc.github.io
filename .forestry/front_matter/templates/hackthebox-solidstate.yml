@@ -50,3 +50,4 @@ fields:
   default: ''
 pages:
 - _posts/2018-07-03-hackthebox-blue.md
+- _posts/sense.md
