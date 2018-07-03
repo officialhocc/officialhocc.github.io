@@ -16,8 +16,8 @@ menu:
   path: menu
   url: contact.html
 - name: Resume
-  url: https://github.com/officialhocc/officialhocc.github.io/blob/master/assets/img/Sean%20McRae%20Resume%20.pdf
-  path: menu
+  url: Sean%20McRae%20Resume%20.pdf
+  path: assets/img/
 social:
 - icon: github
   link: https://github.com/officialhocc
