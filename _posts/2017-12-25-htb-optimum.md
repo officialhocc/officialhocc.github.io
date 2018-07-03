@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HackTheBox | Optimum
-date: 2018-07-03 23:00:00 +0000
+date: 2018-07-02 19:00:00 -0400
 categories: hackthebox
 image:
   feature: assets/img/192032c15b8c0b165d309ec5bd73484c.jpg
