@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackTheBox - October
+title: HackTheBox | October
 date: 2018-07-03 23:00:00 +0000
 categories:
 - hackthebox
