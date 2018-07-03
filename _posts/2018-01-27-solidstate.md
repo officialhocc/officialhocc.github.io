@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "HackTheBox - SolidState"
-date:   2018-01-27 01:00:00 +0100
-categories: [hackthebox]
-description: "No one quite knows who, or what, they are."
+title: HackTheBox - SolidState
+date: 2018-07-03 23:00:00 +0000
+categories:
+- hackthebox
+description: No one quite knows who, or what, they are.
 image:
   feature: solidstate.jpg
-  credit:
-  creditlink:
+  credit: 
+  creditlink: 
 ---
 
 
