@@ -49,4 +49,4 @@ fields:
   hidden: false
   default: ''
 pages:
-- _posts/hackthebox-blue.md
+- _posts/2018-07-03-hackthebox-blue.md
