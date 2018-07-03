@@ -48,5 +48,3 @@ fields:
   type: textarea
   hidden: false
   default: ''
-pages:
-- resume.md
