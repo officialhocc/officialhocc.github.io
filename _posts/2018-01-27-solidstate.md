@@ -6,7 +6,7 @@ categories:
 - hackthebox
 description: ''
 image:
-  feature: "/assets/img/Alchemical-Seal-Wallpaper-by-saintabyssal.png"
+  feature: assets/img/Alchemical-Seal-Wallpaper-by-saintabyssal.png
   credit: 
   creditlink: 
 ---
