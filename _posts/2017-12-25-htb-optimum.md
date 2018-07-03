@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "HackTheBox - Optimum"
-date:   2017-12-25 00:00:00 +0100
+title: HackTheBox - Optimum
+date: 2018-07-03 23:00:00 +0000
 categories: hackthebox
 image:
   feature: optimum.jpg
-  credit:
-  creditlink:
+  credit: 
+  creditlink: 
 ---
 
 This post describes multiple attacks upon the Optimum box on [hackthebox.eu](http://hackthebox.eu).  
