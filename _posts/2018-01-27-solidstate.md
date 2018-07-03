@@ -6,7 +6,7 @@ categories:
 - hackthebox
 description: No one quite knows who, or what, they are.
 image:
-  feature: solidstate.jpg
+  feature: "/assets/img/Alchemical-Seal-Wallpaper-by-saintabyssal.png"
   credit: 
   creditlink: 
 ---
