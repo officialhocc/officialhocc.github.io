@@ -16,7 +16,7 @@ menu:
   path: menu
   url: contact.html
 - name: Resume
-  url: Sean%20McRae%20Resume%20.pdf
+  url: Resume.pdf
   path: assets/img/
 social:
 - icon: github
