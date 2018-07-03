@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackTheBox - SolidState
+title: HackTheBox | SolidState
 date: 2018-07-03 23:00:00 +0000
 categories:
 - hackthebox
