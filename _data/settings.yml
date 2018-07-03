@@ -1,0 +1,24 @@
+---
+title: Sean J McRae
+tagline: Information Security Library
+disqus:
+  comments: false
+  disqus_shortname: ''
+google-ID: ''
+menu:
+- name: About
+  path: menu
+  url: about.html
+- name: Reports
+  path: menu
+  url: writing.html
+- name: Contact
+  path: menu
+  url: contact.html
+social:
+- icon: github
+  link: https://github.com/officialhocc
+- icon: linkedin
+  link: https://www.linkedin.com/in/mcraesean97/
+- icon: envelope
+  link: mailto:mcraesean97@gmail.com
