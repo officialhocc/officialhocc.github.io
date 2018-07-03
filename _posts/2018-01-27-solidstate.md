@@ -6,7 +6,7 @@ categories:
 - hackthebox
 description: ''
 image:
-  feature: https://officialhocc.github.io/assets/img/assets/img/solid_by_matt023-d79n43r.png
+  feature: https://officialhocc.github.io/assets/img/assets/img/sacred-geometry-preview-02-.jpg-900x675.jpeg
   credit: 
   creditlink: 
 ---
