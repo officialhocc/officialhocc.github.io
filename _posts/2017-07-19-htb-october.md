@@ -6,7 +6,7 @@ categories:
 - hackthebox
 description: Solutions for HackTheBox October
 image:
-  feature: october.jpg
+  feature: assets/img/sacred-geometry-preview-02-.jpg-900x675.jpeg
   credit: 
   creditlink: 
 ---
