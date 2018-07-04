@@ -20,9 +20,9 @@ permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Bouge|Security"
-description:	       "Security thoughts from a Birmingham Security Analyst."
-author:              "Josiah Beverton"
+title:		           "Sean J McRae | Information Security Library"
+description:	       "Library of Information Security Topics by Sean J McRae."
+author:              "Sean J McRae"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
